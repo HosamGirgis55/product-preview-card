@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("https://fonts.google.com/specimen/Montserrat");
+}
+@font-face {
+    font-family: "Fraunces";
+    src: url("https://fonts.google.com/specimen/Fraunces");
+}
+.contaner {
+    background-color: rgb(184, 200, 200);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+.Cart {
+    width: 50%;
+}
+
+.image {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+
+}
+
+.describtion {
+    padding: 3em !important;
+}
+
+.describtion h3,
+.describtion p {
+    font-size: 1.3em;
+    opacity: 50%;
+}
+
+.describtion h2 {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.describtion .price .realPrice {
+    color: hsl(158, 36%, 37%);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.describtion .price .fakePrice {
+    font-size: 1.4em;
+    opacity: 50%;
+    text-decoration: line-through;
+}
+
+.describtion .addToCart {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: 0;
+}
+
+.describtion .addToCart:hover {
+    background-color: hsl(159, 97%, 14%);
+
+}
+
+@media screen and (max-width: 1024px) {
+    .Cart {
+        width: 75% !important;
+    }
+    .contaner {
+        height: 1200px !important;
+    }
+    .describtion {
+        padding: 1em !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cart {
+        width: 90% !important;
+    }
+    .contaner {
+        height: 950px !important;
+    }
+    .describtion {
+        padding: 2em !important;
+    }
+    .image {
+        background-image: url("../images/image-product-mobile.jpg");
+        height: 300px;
+    }
+    .describtion h2
+    {
+        font-size: 2em;
+    }
+    
+}
